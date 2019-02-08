@@ -1,13 +1,21 @@
 <!DOCTYPE html><html><head>
 <title>Calculator</title><meta charset="utf-8">
 <script type="text/javascript">
+
 function cube() {
  var num = document.getElementById("n1");
  num.value = Math.pow(num.value, 3);
 }
+
 function sine() {
  var num = document.getElementById("n3");
  num.value = Math.sin(num.value);
+}
+
+function cuarta() {
+ var num = document.getElementById("n2");
+ num.value = Math.pow(num.value, 4);
+
 }
 
 </script>
@@ -19,12 +27,21 @@ function sine() {
  
  <button onclick="cube()"> x^3 </button>
 <p> 
+
 Number:
 
  <input type="text" id="n3">
  
  <button onclick="sine()"> sine </button>
  </p>
+
+<p>
+ Number:
+ <input type="text" id="n2">
+ 
+ <button onclick="cuarta()"> x^4 </button>
+ 
+</p>
 
 </body>
 </html>
